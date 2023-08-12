@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  background-color: gray;
+} /* setting the nav to flexbox */
+
+nav ul {
+  list-style: none;
+} /* removing the bullet points from the list */
+
+nav ul a {
+  color: white; /* setting the color of the links to white */
+  text-decoration: none;
+}
