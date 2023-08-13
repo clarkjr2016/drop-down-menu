@@ -2,18 +2,47 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 nav {
+  background: #008080;
+  height: 80px;
+  width: 100%;
   display: flex;
-  background-color: gray;
-} /* setting the nav to flexbox */
+  align-items: center;
+}
 
-nav ul {
-  list-style: none;
-} /* removing the bullet points from the list */
+.dropdown__container {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
 
-nav ul a {
-  color: white; /* setting the color of the links to white */
+.dropbtn {
+  background-color: transparent;
+  border-width: 0;
+  padding: 1px;
+  font-size: large;
+}
+
+.dropdown__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  z-index: 1;
+  background-color: #008080;
+  width: 100px;
+}
+
+.hide {
+  display: none;
+}
+
+.dropdown__content a {
+  padding: 10px;
   text-decoration: none;
+  color: black;
 }
